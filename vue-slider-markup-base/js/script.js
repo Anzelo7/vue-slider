@@ -37,7 +37,7 @@ const root = new Vue({
             this.index++
         }
     }
-})
+});
 
 
 
