@@ -1,3 +1,5 @@
+console.log('JS OK')
+
 const slides = [
     {
         image: 'img/01.jpg',
@@ -26,6 +28,7 @@ const slides = [
     }
 ];
 
+
 const thumbClick = document.querySelector('thumb');
 // L'utente clicca su una thumb per visualizzare l'immagine
 thumbClick.addEventListener('click', thumbActive)
@@ -33,4 +36,28 @@ thumbClick.addEventListener('click', thumbActive)
 if (thumbClick == true) {
     const thumbActive = document.querySelector('active');
     document.querySelector('thumb') = thumbActive;
-} 
+}
+
+
+
+const CHANGE_IMAGE_DELAY = 3;
+
+let idInterval = setInterval(automaticImageChange, CHANGE_IMAGE_DELAY * 1000);
+
+function manageTimeInterval() {
+    idInterval = setInterval(automaticImageChange, CHANGE_IMAGE_DELAY * 1000);
+}
+
+
+
+slideBlock = document.querySelector('slider-wrapper');
+
+slideBlock.addEventListener("mouseover", changeDef);
+
+function changeDef() {
+    if (slideBlock == true) {
+        clearInterval(idInterval);
+    } else {
+        idInterval == true;
+    }
+}
