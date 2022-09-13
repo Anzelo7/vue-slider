@@ -57,7 +57,7 @@ slideBlock.addEventListener("mouseover", changeDef);
 function changeDef() {
     if (slideBlock == true) {
         clearInterval(idInterval);
-    } else {
+    } else { 
         idInterval == true;
     }
 }
