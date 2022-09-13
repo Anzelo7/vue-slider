@@ -39,7 +39,7 @@ if (thumbClick == true) {
 }
 
 
-
+//cambio immagine ogni 3 secondi
 const CHANGE_IMAGE_DELAY = 3;
 
 let idInterval = setInterval(automaticImageChange, CHANGE_IMAGE_DELAY * 1000);
@@ -49,7 +49,7 @@ function manageTimeInterval() {
 }
 
 
-
+//mouseover slideBlock
 slideBlock = document.querySelector('slider-wrapper');
 
 slideBlock.addEventListener("mouseover", changeDef);
@@ -57,7 +57,7 @@ slideBlock.addEventListener("mouseover", changeDef);
 function changeDef() {
     if (slideBlock == true) {
         clearInterval(idInterval);
-    } else { 
+    } else {
         idInterval == true;
     }
 }
