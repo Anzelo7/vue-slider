@@ -76,8 +76,8 @@ const app = new Vue(
                 this.createInterval();
             },
 
-            selectImage(activeIndexImg) {
-                this.activeIndex = activeIndexImg;
+            selectImage(newActiveIndex) {
+                this.activeIndex = newActiveIndex;
             }
         }
     }
